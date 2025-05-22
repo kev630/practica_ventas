@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>gestion de productos </h1>
+    <form id="formproucto">
+        <input type="text" id="nombre_prod" placeholder="nombre" required>
+        <input type="number" id="stock" placeholder="cantidad" required>
+        <input type="number" id ="valor" placeholder="unidad" required>
+        <button type="agregar">registrar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>nombre_prod</th>
+                <th>stock</th>
+                <th>valor</th>
+            </tr>
+        </thead>
+        <tbody id="tablaproducto"></tbody>
+    </table>
+    <script src="js/productoMain.js"></script>
+</body>
+</html>
